@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="orange.css" rel="stylesheet">
+    <script src="orange.js" defer></script>
+    <form action="backend/contact.php" method="POST" id="contactForm">
+    <title>Orange Cleaning and Hauling</title>
+</head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1><a href="index.html">Orange Cleaning and Hauling</a></h1>
+            </header>
+            <nav class="topnav">
+                <a href="index.html" class="active">Orange Cleaning and Hauling</a>
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="services.html">SERVICES</a>
+                    <a href="pricing.html">PRICING</a>
+                    <a href="contact.html">CONTACT US</a>
+                </div>
+                <button class="hamburger" onclick="myFunction()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+            <nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>            
+            </nav>
+        <main>
+            <div id="homecontact">
+            <h2> We’re Here to Help!</h2>
+                
+            
+            <p>Have questions or ready to schedule your junk removal? We're here to assist you! Reach out to us using one of the methods below, and our team will get back to you as soon as possible. </p>
+            </div>
+            <h3>Contact us</h3>
+            <div class="container">
+            <div style="text-align:center">
+            </div>
+                <div class="row">
+                  <div class="contact">
+                  </div>
+                  <div class="contact">
+                    <form action="submitting.html" method="POST" id="contactForm">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                        <label for="mail">Email</label>
+                        <input type="text" id="mail" name="mail" placeholder="Your email..">
+                        
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" placeholder="Your Phone Number..">
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write..." style="height:170px"></textarea>
+                       
+                        <input type="submit" name="Submit" value="Submit">
+
+
+                    </form>
+                      
+                  </div>
+                </div>
+               </div>
+               
+        
+        </main>

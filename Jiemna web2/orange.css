@@ -1,0 +1,919 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Center everything */
+body {
+    background-color:  #FBCEB1;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex; /* Flexbox centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full viewport height */
+    text-align: center; /* Center all text by default */
+}
+
+/* Make sure wrapper is centered too */
+#wrapper {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Optional max-width */
+    text-align: left; /* Reset text-align if you don't want everything to be centered */
+}
+
+
+header {
+    background-color: #FBCEB1; /* Base background color */
+    background-image: url(Clean.png); /* Keep the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: 30%; /* Scale the image to 30% of the header width */
+    background-position: left center; /* Position the image to the left and vertically centered */
+    color: black;
+    height: 128px; /* Set a proper height to make the header visible */
+    padding-left: 105px;
+    text-align: center;
+}
+
+
+.container {
+    background-color: #FBCEB1; /* Matches the header's background color */
+    border-radius: 5px; /* Retain any specific styling you need */
+    padding: 20px;
+}
+
+
+/* Header links */
+header a {text-decoration: none;}
+header a:link, header a:visited, header a:hover {color: black;}
+
+h1 {
+    font-size: 34px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Centering headers */
+h2, h3, h4, h5, h6 {
+    text-align: center !important; /* Center text */
+    margin: 0 auto; /* Center blocks */
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 34px;
+    line-height: 1.8;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+   
+}
+
+.header7 {
+    font-size: 34px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 18px;
+    color: black;
+    text-align: center; /* Center text */
+    margin: 0 auto; /* Center blocks */
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: orangered !important;
+}
+
+
+
+header h1 {
+    display: inline-block; /* Shrinks to fit content */
+    text-align: center;
+}
+
+/* Styling specifically for the header link */
+header h1 a {
+    color: orangered; /* Orange text color */
+    text-decoration: none; /* Remove underline */
+    background-color: transparent; /* Ensure no background color */
+}
+
+header h1 a:visited,
+header h1 a:hover {
+    color: black; /* Keep the color consistent */
+    background-color: #FBCEB1; /* Ensure no background interference */
+    text-decoration: transparent; /* No underline or other effects */
+}
+
+/* Navigation bar */
+nav {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav a {text-decoration: none;}
+
+a:link, a:visited {
+    background-color:  #FBCEB1;
+    color: black;
+    padding: 25px 25px 25px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: orangered;
+}
+
+/*list decoration(Home, About us, etc...*/
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #FF5733;
+    padding: 10px;
+}
+/*the list link for homee, about us, etc... deccoration so i don't have to change the other links color*/
+nav ul li a {
+    background-color: #FF5733 !important;
+    color: black;
+    padding: 25px 25px 25px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* Main container */
+main {
+    background-color: #FBCEB1;
+    padding: 0 0 2em 0;
+    display: block;
+    width: 100%;
+    max-width: 1200px; /* Optional, for limiting max width */
+}
+
+#specific-page-main {
+    background-color: #FBCEB1;
+}
+
+
+
+#mobile { display: inline;}
+
+#desktop { display: none;}
+
+.pageprice {
+    background-color: #FBCEB1;
+}
+
+/* Update list container styles */
+.list-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 30px auto;
+    clear: both;
+}
+ 
+
+/* Styles for the row */
+.row {
+    display: flex;
+    flex-direction: column; /* Stack items in the row vertically */
+    flex: 1; /* Take up equal space */
+    padding: 20px;
+    text-align: left;
+}
+
+.row ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.row li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Styles for the column */
+.columm {
+    flex: 1; /* Take up equal space */
+    padding: 20px;
+    text-align: center; /* Align the text inside the column to the right */
+}
+
+.columm ul {
+    list-style-type: disc; /* Adds default dots */
+    margin: 0;
+    padding-left: 40px; /* Indent the list items */
+    text-align: left; /* Aligns the list items */
+}
+
+.columm li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* Table adjustments */
+table {
+    margin: auto;
+    width: 100%;
+    border-spacing: 0;
+    table-layout: auto;
+    background-color:  #CC5500;
+    
+}
+/* Table Styles */
+/* Enhanced Table Styling */
+#flow table {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #CC5500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#flow table th,
+#flow table td {
+    padding: 20px 30px;
+    text-align: center;
+    border: 2px solid rgb(243, 121, 8);
+}
+
+#flow table th {
+    background-color: #FF5733;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#flow table td {
+    font-size: 24px;
+    color: white;
+}
+
+#flow table .call-button,
+#flow table .email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#flow table .call-button:hover,
+#flow table .email-button:hover {
+    background-color: orangered;
+    transform: scale(1.05);
+}
+
+ 
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid darkolivegreen;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: orangered;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;}
+  
+input[type=submit]:hover {
+    background-color: darkorange;
+}
+  
+.container {
+    border-radius: 5px;
+    background-color: #FBCEB1;
+    padding: 20px;
+}
+
+ 
+/* Parent container */
+.flow {
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    height: auto;
+    place-items: left !important;   /* This centers the content both horizontally and vertically */
+    padding: 20px;       /* Ensure it takes full viewport height */
+}
+
+/* Table styling */
+table {
+    width: 200%; /* Adjust the width as needed */
+    max-width: 1200px; /* Optional max-width */
+    border-spacing: 0;
+    table-layout: auto;
+    background-color: #CC5500;
+}
+
+table th, table td {
+    padding: 10px;
+    font-size: 32px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    width: 200%; /* Adjust the width as needed */
+    max-width: 2000px; /* Optional max-width */
+}
+
+
+
+
+.pageprice, p {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.homecontact, p {
+    background-color:  #FBCEB1;
+    text-align: center;
+    font-size: 29px;
+    line-height: 1.8;
+}
+
+.pageprice, ul {
+    font-size: 20px;
+    padding: 0;
+}
+
+.pageservices, li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.more-services {
+    width: 100%;
+    padding: 20px;
+    clear: both;
+    margin-left: 0; /* Add this to remove left margin */
+}
+
+.more-services ul {
+    width: 100%;
+    margin: 20px 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.more-services li {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.call-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange !important;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.call-button:hover {
+    background-color: orangered !important;
+}
+
+
+
+.email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange !important;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.truck-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+
+.truck-content {
+    flex: 1;
+    text-align: left;
+}
+
+
+.truck-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+
+.truck-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+.truck-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.moving-truck {
+    flex: 0 0 40%;  /* This makes the image take 40% of the space */
+}
+
+.about-content {
+    flex: 1;  /* This takes the remaining space */
+}
+
+/* For images within specific sections */
+.truck-image img {
+    width: 100%; /* Takes full width of parent container */
+    height: auto;
+}
+
+/* For all images */
+img {
+    width: 100%;
+    max-width: 1200px; /* Prevents image from getting too large */
+    height: auto;
+}
+.moving-truck {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+}
+
+
+
+.specific-page-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header h2 {
+    flex: 0 0 45%;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.specific-page-main h3 {
+    flex: 0 0 45%;
+    text-align: right;
+    margin: 20px 0;
+}
+
+/* Clear the float for content below */
+.wrap {
+    width: 100%;
+    clear: both;
+    margin-top: 20px;
+}
+
+
+p.a {
+    width: 45%;
+    float: left;
+    text-align: left;
+    background-color: transparent;
+}
+
+p.b {
+    width: 45%;
+    float: right;
+    text-align: left;
+    background-color: transparent;
+}
+ 
+/* Steps List Centering */
+.steps {
+    width: 100%;
+    padding: 20px;
+    clear: both;
+    text-align: center; /* Centers the list within the container */
+}
+
+.steps ul {
+    width: 80%; /* You can adjust this as needed */
+    margin: 0 auto; /* Centers the ul horizontally */
+    list-style-type: disc; /* Adds default dots */
+    padding-left: 40px; /* Adds indentation for the dots */
+}
+
+.steps li {
+    text-align: center; /* Aligns the text inside each list item */
+    margin-bottom: 10px; /* Adds space between list items */
+    font-size: 20px; /* Adjust font size */
+    line-height: 1.5; /* Adds spacing between lines */
+}
+
+.hero {
+    background-image: url('t.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-decoration-color: darkorange;
+}
+.cta-button {
+    background-color: darkorange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+nav a.active {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.hamburger {
+    color: #FF5733;
+}
+
+
+/* Style for homepage link on submitting.html */
+main p a {
+    background-color: orangered !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+/* General Layout Fixes for Mobile */
+@media screen and (max-width: 768px) {
+
+    /* Wrapper - Remove extra space */
+    #wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* Body - Ensure no margin on the body */
+    body {
+        padding-top: 50px;  /* Reduced top padding to decrease space */
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /* Navigation bar */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 5px 0;  /* Reduced padding */
+    }
+
+   
+    .topnav {
+        background-color: #FF5733;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 12px 15px; /* Slightly reduced padding */
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+    }
+
+    .topnav a:hover {
+        background-color: orangered;
+        color: black;
+    }
+
+    .topnav .icon {
+        font-size: 30px;
+        padding: 10px;
+        color: orange;
+        background-color: #FF5733;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav .icon:hover {
+        background-color: orangered;
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+
+    /* Menu links container (hidden by default) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav > a.active {
+    display: block !important;
+    visibility: visible !important;
+    width: 100% !important;
+    text-align: center;
+    padding: 10px;
+    background-color: #FF5733;
+    color: black;
+  }
+
+    /* Hamburger menu */
+    .hamburger {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        top: 10px;  /* Reduced top margin for hamburger button */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: black;
+        transition: all 0.3s ease;
+    }
+
+    /* Header adjustments */
+    header h1 {
+        text-align: center;
+        font-size: 22px;  /* Reduced font size */
+        padding: 10px 0;
+        margin: 0;
+    }
+
+
+    /* Image adjustments */
+    .moving-truck img {
+        width: 100%;
+        height: auto;
+        transform: scale(1.2);  /* Reduced scale */
+        margin: 10px 0;  /* Reduced margin */
+    }
+
+
+    .specific-page-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .page-header h2 {
+        flex: 0 0 45%;
+        text-align: left;
+        margin: 20px 0;
+    }
+    
+    .specific-page-main h3 {
+        flex: 0 0 45%;
+        text-align: right;
+        margin: 20px 0;
+    }
+
+    
+    /* Clear the float for content below */
+    .wrap {
+        width: 100%;
+        clear: both;
+        margin-top: 20px;
+        }
+
+
+    p.a {
+        width: 45%;
+        float: left;
+        text-align: left;
+        background-color: transparent;
+    }
+
+    p.b {
+        width: 45%;
+        float: right;
+        text-align: left;
+        background-color: transparent;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Steps List Centering */
+    .steps {
+        width: 100%;
+        padding: 20px;
+        clear: both;
+        text-align: center; /* Centers the list within the container */
+        }   
+
+    .steps ul {
+        width: 80%; /* You can adjust this as needed */
+        margin: 0 auto; /* Centers the ul horizontally */
+        list-style-type: disc; /* Adds default dots */
+        padding-left: 40px; /* Adds indentation for the dots */
+    }
+
+    .steps li {
+        text-align: center; /* Aligns the text inside each list item */
+        margin-bottom: 10px; /* Adds space between list items */
+        font-size: 18px; /* Adjust font size */
+        line-height: 1.5; /* Adds spacing between lines */
+    }
+
+    /* Contact Buttons */
+    .call-button1,
+    .email-button1,
+    .contact-button1 {
+        font-size: 14px;  /* Smaller font size */
+        padding: 8px 12px;
+        display: block;
+        margin: 10px auto;
+        background-color: #FF5733;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .call-button1:hover,
+    .email-button1:hover,
+    .contact-button:hover {
+        background-color: orangered;
+    }
+
+    /* General Text Adjustments */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 18px;  /* Smaller font size for headings */
+        padding: 5px;
+    }
+
+    p {
+        font-size: 14px;  /* Smaller font size for paragraphs */
+        padding: 5px;
+    }
+
+    /* Table Adjustments */
+    #flow table {
+        width: 100%; /* Table takes up full width */
+        margin: 10px 0;  /* Reduced margin */
+    }
+
+    #flow table th, #flow table td {
+        padding: 8px;  /* Reduced padding */
+        font-size: 14px;  /* Smaller font size */
+    }
+
+    #flow table .call-button,
+    #flow table .email-button {
+        padding: 6px 10px;  /* Reduced padding */
+        font-size: 12px;
+    }
+
+    /* Ensure no extra spaces */
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pageservices, li {
+        margin-bottom: 10px;
+        font-size: 11px;
+        padding: 0;
+        text-align: left !;
+    }
+
+    
+    .more-services {
+        width: 100%;
+        padding: 1px; /* Reduced padding */
+        clear: both;
+        margin: 0; /* Remove all margins */
+    }
+
+    .more-services ul {
+        width: 100%;
+        margin: 10px 0;
+        list-style-type: disc;
+        padding-left: 15px; /* Further reduce padding for mobile */
+    }
+
+    .more-services li {
+        text-align: left;
+        margin-bottom: 8px;
+        font-size: 11px; /* Slightly larger font for better readability */
+        line-height: 1.4;
+        padding-right: 10px; /* Add some right padding */
+    }
+    
+}
+
+
+
+
+
+/* For tablets (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #wrapper {
+        width: 90%;
+    }
+   
+    .col {
+        flex: 1 0 45%;
+        max-width: 45%;
+    }
+   
+    nav {
+        font-size: 2em;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+
+/* For larger screens (above 1024px) */
+@media screen and (min-width: 1025px) {
+    .row-cols-1 {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
+/* For image responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
